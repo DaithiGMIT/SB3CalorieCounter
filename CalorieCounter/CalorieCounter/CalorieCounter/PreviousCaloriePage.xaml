@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalorieCounter.PreviousCaloriePage">
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <!-- Screen Size  450 x 600-->
+
+
+            <Grid ColumnSpacing="10" RowSpacing="5" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                    <RowDefinition Height="66.67"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="450"/>
+                </Grid.ColumnDefinitions>
+
+                <BoxView BackgroundColor="MediumPurple" Grid.Row="0" Grid.Column="0"/>
+
+                <Label Text="Select An Option" Grid.Row="2" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+                <Label x:Name="LblDisplay" Text="Todays Calories:" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large" />
+
+
+                <Button x:Name="ShowPreviousDay" Text="Show Previous Day" Grid.Row="3" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="250" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="ShowPreviousDay_Clicked"/>
+
+                <Button x:Name="ShowPreviousWeek" Text="Show Previous Week" Grid.Row="4" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="250" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="ShowPreviousWeek_Clicked"/>
+
+                <Entry x:Name="EntrySearchDate" Grid.Row="5" Grid.Column="0" HeightRequest="50" HorizontalOptions="Center" WidthRequest="250" HorizontalTextAlignment="Center" VerticalOptions="Center" FontSize="Medium" Placeholder="DD/MM/YYYY" />
+
+                <Button x:Name="SearchDate" Text="Search Date" Grid.Row="6" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="250" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="SearchDate_Clicked"/>
+
+                <Button x:Name="MainPage" Text="Return To Main Page" Grid.Row="7" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="250" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="MainPage_Clicked"/>
+
+                <BoxView BackgroundColor="MediumPurple" Grid.Row="8" Grid.Column="0"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
