@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalorieCounter.LoginPage">
+    <StackLayout>
+
+        <!-- Screen Size  450 x 600-->
+
+
+        <Grid ColumnSpacing="10" RowSpacing="5" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="MediumPurple" Grid.Row="0" Grid.Column="0"/>
+
+            <Label x:Name="LblUsername" Text="Username" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+            <Entry x:Name="UserName" Grid.Row="2" Grid.Column="0" HeightRequest="50" HorizontalOptions="Center" WidthRequest="300" VerticalOptions="Center" Placeholder="USERNAME" />
+
+            <Label x:Name="LblPassword" Text="Password" Grid.Row="3" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+            <Entry x:Name="password"  Grid.Row="4" Grid.Column="0" HeightRequest="50" HorizontalOptions="Center" WidthRequest="300" VerticalOptions="Center" Placeholder="PASSWORD" IsPassword="true" />
+
+            <Button x:Name="Login" Text="Login" Grid.Row="5" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="200" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="Login_Clicked"/>
+
+
+            <BoxView BackgroundColor="MediumPurple" Grid.Row="8" Grid.Column="0"/>
+
+
+        </Grid>
+
+    </StackLayout>
+    
+</ContentPage>

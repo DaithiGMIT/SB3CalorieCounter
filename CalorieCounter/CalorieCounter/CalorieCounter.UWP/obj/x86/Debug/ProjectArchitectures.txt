@@ -1,0 +1,1 @@
+C:\Users\Daithi\OneDrive\Desktop\Group Project\CalorieCounter\CalorieCounter\CalorieCounter.UWP\CalorieCounter.UWP.csproj;x86

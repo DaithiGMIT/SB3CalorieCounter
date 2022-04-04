@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CalorieCounter.MainPage">
+
+    <StackLayout>
+
+        <!-- Screen Size  450 x 600-->
+
+
+        <Grid ColumnSpacing="10" RowSpacing="5" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+                <RowDefinition Height="66.67"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="450"/>
+            </Grid.ColumnDefinitions>
+
+            <BoxView BackgroundColor="MediumPurple" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+
+            <Label x:Name="WelcomeLabel"  Text="Welcome" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large"/>
+            
+            <Label x:Name="LblTodayCals" Text="Todays Calories:" Grid.Row="2" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Title" />
+
+            <Label x:Name="LblWeeklyCals" Text="Weekly Calories:" Grid.Row="3" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Title"/>
+
+            <Label x:Name="LblGoalCals" Text="Goal Calories:" Grid.Row="4" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Title"/>
+
+            <Button x:Name="EnterCalories" Text="Enter Calories" Grid.Row="5" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="200" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="EnterCalories_Clicked"/>
+
+            <Button x:Name="VeiwCalories" Text="Veiw Calories" Grid.Row="6" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="200" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="VeiwCalories_Clicked"/>
+
+            <Button x:Name="SetGoals" Text="Set Goals" Grid.Row="7" Grid.Column="0" BorderColor="Gray" HeightRequest="50" HorizontalOptions="Center" WidthRequest="200" VerticalOptions="Center" FontSize="Medium"
+                    Clicked="SetGoals_Clicked"/>
+
+            <BoxView BackgroundColor="MediumPurple" Grid.Row="8" Grid.Column="0"/>
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
